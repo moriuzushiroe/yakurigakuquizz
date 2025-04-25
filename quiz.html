@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>問題</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="questionTitle"></h1>
+    <div id="questionArea"></div>
+
+    <table id="answerTable">
+        <thead>
+            <tr>
+                <th></th>
+                <th>①</th><th>②</th><th>③</th><th>④</th><th>⑤</th><th>⑥</th><th>⑦</th><th>⑧</th>
+            </tr>
+        </thead>
+        <tbody id="choiceRows"></tbody>
+    </table>
+
+    <div class="button-area">
+        <button onclick="showExplanation()">解説を見る</button>
+        <button onclick="toggleCheck()">チェック</button>
+        <button onclick="showCheckedOnly()">チェックした問題のみ出題</button><br><br>
+        <button onclick="prevQuestion()">前の問題</button>
+        <button onclick="nextQuestion()">次の問題</button>
+    </div>
+
+    <div id="statusArea"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
