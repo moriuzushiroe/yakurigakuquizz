@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>問題入力</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>正誤問題作成</h1>
+    <div class="input-box">
+        <h2>正文リスト</h2>
+        <textarea id="correctList" rows="10" cols="50" placeholder="例）\n1. 〜\n2. 〜"></textarea>
+    </div>
+    <div class="input-box">
+        <h2>誤文リスト</h2>
+        <textarea id="incorrectList" rows="10" cols="50" placeholder="例）\n1. 〜\n2. 〜"></textarea>
+    </div>
+    <button onclick="generateQuiz()">問題を生成</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
